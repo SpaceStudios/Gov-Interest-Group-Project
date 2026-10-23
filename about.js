@@ -2,6 +2,11 @@ const slider = document.getElementById("donationSlider");
 const donateButton = document.getElementById("donateButton");
 const textInput = document.getElementById("donationAmount");
 
+window.onload = function() {
+    textInput.value = "$" + slider.value;
+    donateButton.value = "Donate: $" + slider.value;
+};
+
 slider.addEventListener('input', (event) => {
     const value = slider.value;
     textInput.value = "$" + value;
