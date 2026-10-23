@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Citizens for Universal Healthcare - About</title>
@@ -44,10 +45,18 @@
                     <p>We will then help pass legislation that will support bringing down healthcare costs for all Americans</p>
                 </div>
             </div>
+            <div class="donate">
+                <h1>Donate</h1>
+                <p>Every little donation helps get this idea closer to fruition</p>
+                <input type="range" min="10" max="100000" value="10" class="slider" id="donationSlider">
+                <input type="text" class="donation_button" id="donationAmount" value="10$" class="donation_amount">
+                <input type="button" value="Donate: 10$" id="donateButton" class="donation_button">
+                <p id="donateResponse" class="basic_text hidden">Thank you for your donation of 10$!</p>
+            </div>
         </div>
         <br>
         <p>Background Image Credit: The Wall Street Journal</p>
         </center>
-        <script src="script.js"></script>
+        <script src="about.js"></script>
     </body>
 </html>
